@@ -19,6 +19,8 @@ return require('packer').startup(function()
         'AckslD/nvim-whichkey-setup.lua',
         requires = {'liuchengxu/vim-which-key'}
     }
+    -- Add Multi cursor
+    use {'mg979/vim-visual-multi', branch= 'master'}
     -- Highlight, edit, and navigate code using a fast incremental parsing library
     use 'nvim-treesitter/nvim-treesitter'
     -- Additional textobjects for treesitter

@@ -244,6 +244,11 @@ _G.packer_plugins = {
     path = "/home/eddie/.local/share/nvim/site/pack/packer/start/vim-closetag",
     url = "https://github.com/alvan/vim-closetag"
   },
+  ["vim-visual-multi"] = {
+    loaded = true,
+    path = "/home/eddie/.local/share/nvim/site/pack/packer/start/vim-visual-multi",
+    url = "https://github.com/mg979/vim-visual-multi"
+  },
   ["vim-which-key"] = {
     loaded = true,
     path = "/home/eddie/.local/share/nvim/site/pack/packer/start/vim-which-key",
