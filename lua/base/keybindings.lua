@@ -3,10 +3,17 @@ map = M.map
 g = M["g"]
 
 --Remap space as leader key
-map('', '<Space>', '<Nop>', { noremap = true, silent = true })
 
+map('', '<Space>', '<Nop>', { noremap = true, silent = true })
 g.mapleader = ' '
 g.maplocalleader = ' '
+
+
+-- remap ; as leader key
+--map('', '<;>', '<Nop>', { noremap = true, silent = true })
+
+--g.mapleader = ';'
+--g.maplocalleader = ';'
 
 --Remap for dealing with word wrap
 map('n', 'k', "v:count == 0 ? 'gk' : 'k'", { noremap = true, expr = true, silent = true })
