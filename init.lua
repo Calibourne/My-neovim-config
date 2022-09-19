@@ -14,7 +14,7 @@ require('packer-install')
 
 ------------- Load the plugins -------------
 
-require('plugins')
+require('plugins.plugins-setup')
 
 cmd([[colorscheme vscode]])
 cmd([[colorscheme doom-one]])

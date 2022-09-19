@@ -204,6 +204,11 @@ _G.packer_plugins = {
     path = "/home/eddie/.local/share/nvim/site/pack/packer/start/nvim-web-devicons",
     url = "https://github.com/kyazdani42/nvim-web-devicons"
   },
+  ["nvim-whichkey-setup.lua"] = {
+    loaded = true,
+    path = "/home/eddie/.local/share/nvim/site/pack/packer/start/nvim-whichkey-setup.lua",
+    url = "https://github.com/AckslD/nvim-whichkey-setup.lua"
+  },
   ["packer.nvim"] = {
     loaded = true,
     path = "/home/eddie/.local/share/nvim/site/pack/packer/start/packer.nvim",
@@ -238,6 +243,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/eddie/.local/share/nvim/site/pack/packer/start/vim-closetag",
     url = "https://github.com/alvan/vim-closetag"
+  },
+  ["vim-which-key"] = {
+    loaded = true,
+    path = "/home/eddie/.local/share/nvim/site/pack/packer/start/vim-which-key",
+    url = "https://github.com/liuchengxu/vim-which-key"
   },
   ["vscode.nvim"] = {
     loaded = true,
