@@ -7,5 +7,8 @@ o.shiftwidth=4
 o.mouse='a'
 o.expandtab = true
 o.relativenumber = true
+o.number = true
 o.autoindent = true
 o.clipboard='unnamed'
+
+o.swapfile = false
