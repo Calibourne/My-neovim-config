@@ -8,6 +8,7 @@ local M = require('utils')
 local cmd = M.cmd
 local map = M.map
 
+
 ---------- Install packer manager ----------
 
 require('packer-install')

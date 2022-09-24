@@ -1,5 +1,5 @@
-local M = {
-}
+local M = {}
+
 function M.cmd(...) vim.cmd(...) end -- to execute Vim commands e.g. cmd('pwd')
 M["fn"] = vim.fn -- to call Vim functions e.g. fn.bufnr()
 M["g"] = vim.g -- a table to access global variables
