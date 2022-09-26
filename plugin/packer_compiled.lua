@@ -119,10 +119,10 @@ _G.packer_plugins = {
     path = "/home/eddie/.local/share/nvim/site/pack/packer/start/cmp_luasnip",
     url = "https://github.com/saadparwaiz1/cmp_luasnip"
   },
-  ["doom-one.vim"] = {
+  ["doom-one.nvim"] = {
     loaded = true,
-    path = "/home/eddie/.local/share/nvim/site/pack/packer/start/doom-one.vim",
-    url = "https://github.com/romgrk/doom-one.vim"
+    path = "/home/eddie/.local/share/nvim/site/pack/packer/start/doom-one.nvim",
+    url = "https://github.com/NTBBloodbath/doom-one.nvim"
   },
   ["editorconfig-vim"] = {
     loaded = true,
@@ -174,10 +174,25 @@ _G.packer_plugins = {
     path = "/home/eddie/.local/share/nvim/site/pack/packer/start/kommentary",
     url = "https://github.com/b3nj5m1n/kommentary"
   },
+  ["lualine.nvim"] = {
+    loaded = true,
+    path = "/home/eddie/.local/share/nvim/site/pack/packer/start/lualine.nvim",
+    url = "https://github.com/nvim-lualine/lualine.nvim"
+  },
   ["nvim-cmp"] = {
     loaded = true,
     path = "/home/eddie/.local/share/nvim/site/pack/packer/start/nvim-cmp",
     url = "https://github.com/hrsh7th/nvim-cmp"
+  },
+  ["nvim-comment"] = {
+    loaded = true,
+    path = "/home/eddie/.local/share/nvim/site/pack/packer/start/nvim-comment",
+    url = "https://github.com/terrortylor/nvim-comment"
+  },
+  ["nvim-gps"] = {
+    loaded = true,
+    path = "/home/eddie/.local/share/nvim/site/pack/packer/start/nvim-gps",
+    url = "https://github.com/SmiteshP/nvim-gps"
   },
   ["nvim-lspconfig"] = {
     loaded = true,

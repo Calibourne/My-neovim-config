@@ -1,5 +1,5 @@
 local M = require 'utils'
-o = M["o"]
+local o = M["o"]
 
 o.tabstop=4
 o.softtabstop=4
@@ -10,5 +10,5 @@ o.relativenumber = true
 o.number = true
 o.autoindent = true
 o.clipboard='unnamed'
-
+o.termguicolors=true
 o.swapfile = false

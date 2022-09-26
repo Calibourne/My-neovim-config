@@ -368,18 +368,8 @@ local M = {
     --npm i -g stylelint-ls
 
     -->== Lua Syntax Support ==<--
-    "sumneko_lua", -- instructions to get the server enabled:
-    --install ninja-build tool
-    --clone repository and cd to it:
-    --  git clone  --depth=1 https://github.com/sumneko/lua-language-server
-    --  cd lua-language-server
-    --update all tyhe submodules with command:
-    --  git submodule update --depth 1 --init --recursive
-    --install the server by executing:
-    --  cd 3rd/luamake
-    --  ./compile/install.sh
-    --  cd ../..
-    -- ./3rd/luamake/luamake rebuild
+    "sumneko_lua",
+    -- to get the lsp server, follow instructions at https://jdhao.github.io/2021/08/12/nvim_sumneko_lua_conf/
 
     -->==  ==<--
     --"svelte",

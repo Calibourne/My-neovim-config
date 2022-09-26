@@ -6,7 +6,7 @@ require('base.setup')
 
 local M = require('utils')
 local cmd = M.cmd
-local map = M.map
+--local map = M.map
 
 
 ---------- Install packer manager ----------
@@ -17,8 +17,9 @@ require('packer-install')
 
 require('plugins.plugins-setup')
 
-cmd([[colorscheme vscode]])
+--cmd([[colorscheme vscode]])
 cmd([[colorscheme doom-one]])
 --cmd([[colorscheme vscode]])
+--cmd([[:colorscheme everforest]])
 
-require('feline').setup({theme = colors})
+--require('feline').setup({theme = colors})

@@ -1,4 +1,3 @@
-local use = require('packer').use
 return require('packer').startup(function()
     use 'wbthomason/packer.nvim' -- Package manager
     use 'b3nj5m1n/kommentary'
@@ -7,9 +6,11 @@ return require('packer').startup(function()
     -- Appearance
     use 'sainnhe/everforest'
     use 'Mofiqul/vscode.nvim'
-    use 'romgrk/doom-one.vim'
+    use 'NTBBloodbath/doom-one.nvim'
     use 'kyazdani42/nvim-web-devicons'
     use 'feline-nvim/feline.nvim'
+    use 'nvim-lualine/lualine.nvim'
+    use 'SmiteshP/nvim-gps'
     -- Add indentation guides even on blank lines
     use 'lukas-reineke/indent-blankline.nvim'
     -- Add git related info in the signs columns and popups
@@ -23,6 +24,8 @@ return require('packer').startup(function()
     use {'mg979/vim-visual-multi', branch= 'master'}
     -- Highlight, edit, and navigate code using a fast incremental parsing library
     use 'nvim-treesitter/nvim-treesitter'
+    -- Toggle Comment
+    use "terrortylor/nvim-comment"
     -- Additional textobjects for treesitter
     use 'nvim-treesitter/nvim-treesitter-textobjects'
     use 'neovim/nvim-lspconfig' -- Collection of configurations for built-in LSP client
