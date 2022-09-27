@@ -48,4 +48,7 @@ return require('packer').startup(function()
     use 'antoinemadec/FixCursorHold.nvim'
     use 'Pocco81/auto-save.nvim'
     use 'AndrewRadev/splitjoin.vim'
+
+    -- Live Markdown
+    use 'iamcco/markdown-preview.nvim'
 end)
