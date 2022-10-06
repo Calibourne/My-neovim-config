@@ -458,15 +458,15 @@ winbar_components.inactive[1][1] = {
 }
 return {
     feline={
-    theme = gruvbox,
+    --[[ theme = gruvbox,
     default_bg = bg,
     default_fg = fg,
     vi_mode_colors = vi_mode_colors,
     components = components,
-    force_inactive = force_inactive,
+    force_inactive = force_inactive, ]]
     },
     winbar={
-      components = winbar_components,
-      force_inactive = force_inactive,
+      --[[ components = winbar_components,
+      force_inactive = force_inactive, ]]
     }
 }
