@@ -120,6 +120,7 @@ local vi_mode_text = {
   CONFIRM = '|>'
 }
 
+
 local buffer_not_empty = function()
   if vim.fn.empty(vim.fn.expand('%:t')) ~= 1 then
     return true
@@ -153,7 +154,7 @@ force_inactive.buftypes = {
 
 -- vi-mode
 components.active[1][1] = {
-  provider = ' NV-IDE ',
+  provider = ' NeoVim ',
   hl = function()
     local val = {}
 
@@ -458,7 +459,7 @@ winbar_components.inactive[1][1] = {
 }
 return {
     feline={
-    theme = gruvbox,
+    theme = onedarkpro,
     default_bg = bg,
     default_fg = fg,
     vi_mode_colors = vi_mode_colors,

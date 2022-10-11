@@ -11,10 +11,10 @@ require(modules .. 'lspconfig-module')
 require(modules .. 'treesitter-module')
 
 -- choose one of these 2
--- require(modules .. 'lualine-module') -- 1
-require(modules .. 'feline-module') --2
+require(modules .. 'lualine-module') -- 1
+-- require(modules .. 'feline-module') --2
 
-
+require(modules .. 'ufo-module')
 
 
 --require 'plugins.setup.doom_one-module'

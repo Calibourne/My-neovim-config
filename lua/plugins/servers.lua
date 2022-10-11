@@ -35,7 +35,7 @@ local M = {
     --npm install -g awk-language-server
 
     -->== Bash Syntax Support ==<--
-    --"bashls",
+    "bashls",
     --npm i -g bash-language-server
 
     --"beancount",

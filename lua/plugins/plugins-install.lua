@@ -26,6 +26,12 @@ return require('packer').startup(function()
     use 'nvim-treesitter/nvim-treesitter'
     -- Toggle Comment
     use "terrortylor/nvim-comment"
+    -- Code Folding
+    use {'kevinhwang91/nvim-ufo', requires = 'kevinhwang91/promise-async'}
+    -- use{ 'anuvyklack/pretty-fold.nvim',}
+        --[[ config = function()
+            require('pretty-fold').setup()
+        end ]]
     -- Additional textobjects for treesitter
     use 'nvim-treesitter/nvim-treesitter-textobjects'
     use 'neovim/nvim-lspconfig' -- Collection of configurations for built-in LSP client
@@ -50,5 +56,8 @@ return require('packer').startup(function()
     use 'AndrewRadev/splitjoin.vim'
 
     -- Live Markdown
-    use 'iamcco/markdown-preview.nvim'
+    use ({
+        "iamcco/markdown-preview.nvim",
+        run = function() vim.fn["mkdp#util#install"]() end,
+    })
 end)

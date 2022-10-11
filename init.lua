@@ -17,9 +17,9 @@ require('packer-install')
 
 require('plugins.plugins-setup')
 
---cmd([[colorscheme vscode]])
-cmd([[colorscheme doom-one]])
---cmd([[colorscheme vscode]])
---cmd([[:colorscheme everforest]])
+cmd([[colorscheme vscode]])
+-- cmd([[colorscheme doom-one]])
+-- cmd([[colorscheme vscode]])
+-- cmd([[:colorscheme everforest]])
 
 --require('feline').setup({theme = colors})
