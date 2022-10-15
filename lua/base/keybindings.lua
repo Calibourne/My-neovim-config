@@ -2,26 +2,19 @@ local M = require 'utils'
 local map = M.map
 local g = M["g"]
 
---Remap space as leader key
+-- Remap space as leader key
 
 map('', '<Space>', '<Nop>', { noremap = true, silent = true })
 g.mapleader = ' '
 g.maplocalleader = ' '
 
-
--- remap ; as leader key
---map('', '<;>', '<Nop>', { noremap = true, silent = true })
-
---g.mapleader = ';'
---g.maplocalleader = ';'
-
---Remap for dealing with word wrap
+-- Remap for dealing with word wrap
 map('n', 'k', "v:count == 0 ? 'gk' : 'k'", { noremap = true, expr = true, silent = true })
 map('n', 'j', "v:count == 0 ? 'gj' : 'j'", { noremap = true, expr = true, silent = true })
 
 map('i', 'jk', '<Esc>', {noremap = true, silent = true})
 
---Add leader shortcuts
+-- Add leader shortcuts
 map('n', '<leader>w', [[:w<CR>]], { noremap = true, silent = true })
 map('n', '<leader>q', [[:q<CR>]], { noremap = true, silent = true })
 map('n', '<leader>/', [[:noh<CR>]], { noremap = true, silent = true })
@@ -39,6 +32,11 @@ map('n', '<leader><leader>l', "<cmd>lua require'hop'.hint_lines()<cr>", {})
 map('n', '<leader>]', ':tabn<cr>', { noremap = true, silent = true })
 map('n', '<leader>[', ':tabp<cr>', { noremap = true, silent = true })
 map('n', '<C-b>', ':NvimTreeFindFileToggle<cr>', { noremap = true, silent = true })
+
+map('n', '<A-Up>', ':m -2<cr>', {noremap = true, silent = true})
+map('n', '<A-Down>', ':m +1<cr>', {noremap = true, silent = true})
+
+map('n', '<leader>rf', 'gg=G<cr>', {noremap = true, silent = true})
 
 map('i', "<S-Tab>", "<C-d>")
 

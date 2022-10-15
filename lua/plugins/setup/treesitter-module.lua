@@ -1,4 +1,5 @@
-require('nvim-treesitter.configs').setup {
+-- require('nvim-treesitter.configs').setup
+return {
   highlight = {
     enable = true, -- false will disable the whole extension
   },
@@ -49,7 +50,7 @@ require('nvim-treesitter.configs').setup {
   },
 }
 
+-- vim.o.completeopt = 'menu,menuone,noselect'
 -- Set completeopt to have a better completion experience
-vim.o.completeopt = 'menu,menuone,noselect'
 -- vim.opt.foldmethod = "expr"
 -- vim.opt.foldexpr = "nvim_treesitter#foldexpr()"

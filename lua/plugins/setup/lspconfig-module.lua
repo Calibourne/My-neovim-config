@@ -5,14 +5,26 @@ capabilities.textDocument.foldingRange = {
     dynamicRegistration = false,
     lineFoldingOnly = true
 }
-
-capabilities = require('cmp_nvim_lsp').update_capabilities(capabilities)
-
+capabilities = require('cmp_nvim_lsp').default_capabilities(capabilities)
+local on_attach =function() end
 -- Enable some language servers with the additional completion capabilities offered by nvim-cmp
 local servers = require 'plugins.servers'
 for _, lsp in ipairs(servers) do
-  nvim_lsp[lsp].setup {
-    on_attach = on_attach,
-    capabilities = capabilities,
-  }
+    local config ={
+            on_attach = on_attach,
+            capabilities = capabilities,
+    }
+    -- "sumneko_lua",
+    if lsp == 'sumneko_lua' then
+        local lua_settings = {
+            Lua = {
+                diagnostics={
+                    globals={'vim', 'use'}
+                }
+            }
+        }
+
+        config.settings = lua_settings
+    end
+    nvim_lsp[lsp].setup(config)
 end

@@ -1,4 +1,5 @@
-require('gitsigns').setup {
+-- require('gitsigns')
+return {
   signs = {
     add = { hl = 'GitGutterAdd', text = '+' },
     change = { hl = 'GitGutterChange', text = '~' },
