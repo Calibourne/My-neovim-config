@@ -5,6 +5,10 @@ local function hook_config(plugin_name, plugin_conf_file)
     return require(plugin_name).setup(require(Modules .. plugin_conf_file))
 end
 
+local function hook_setup(plugin_conf_file)
+    return require(Modules .. plugin_conf_file)
+end
+
 return require('packer').startup(function()
 
     use 'wbthomason/packer.nvim' -- Package manager
@@ -22,9 +26,13 @@ return require('packer').startup(function()
     -- Appearance
     use 'sainnhe/everforest'
     use 'Mofiqul/vscode.nvim'
-    use 'NTBBloodbath/doom-one.nvim'
+    use {
+        'NTBBloodbath/doom-one.nvim',
+        setup = hook_setup('doom_one-module')
+    }
     use 'ellisonleao/gruvbox.nvim'
     use 'EdenEast/nightfox.nvim'
+    use 'rmehri01/onenord.nvim'
 
     -- custom real-time colorschemes creator
     use 'rktjmp/lush.nvim'
@@ -58,7 +66,7 @@ return require('packer').startup(function()
     use {
         'AckslD/nvim-whichkey-setup.lua',
         requires = {'liuchengxu/vim-which-key'},
-        -- config = hook_config('which-key', 'whichkey-module')
+        -- config = hook_config('which-key','whichkey-module')
     }
 
     -- Add Multi cursor
@@ -72,6 +80,9 @@ return require('packer').startup(function()
 
     -- Toggle Comment
     use "terrortylor/nvim-comment"
+
+    -- Autopairs
+    use "windwp/nvim-autopairs"
 
     -- Code Folding
     use {

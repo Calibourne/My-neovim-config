@@ -1,5 +1,5 @@
-local doom = require 'doom-one'
-doom.setup = function()
+-- local doom = require 'doom-one'
+return function()
     -- Add color to cursor
     vim.g.doom_one_cursor_coloring = false
     -- Set :terminal colors

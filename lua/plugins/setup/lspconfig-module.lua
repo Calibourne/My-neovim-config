@@ -14,7 +14,6 @@ for _, lsp in ipairs(servers) do
             on_attach = on_attach,
             capabilities = capabilities,
     }
-    -- "sumneko_lua",
     if lsp == 'sumneko_lua' then
         local lua_settings = {
             Lua = {

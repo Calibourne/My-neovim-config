@@ -8,6 +8,7 @@ require(plugins .. 'plugins-install')
 require(modules .. 'whichkey-module')
 require(modules .. 'lspconfig-module')
 require(modules .. 'treesitter-module')
+-- require(modules .. 'doom_one-module')
 
 -- choose one of these 2
 -- require(modules .. 'gitsigns-module')
@@ -19,8 +20,7 @@ require(modules .. 'treesitter-module')
 
 
 vim.cmd([[:PackerCompile]])
-
+-- vim.cmd([[:so %]])
 vim.o.completeopt = 'menu,menuone,noselect'
 vim.opt.foldexpr = "nvim_treesitter#foldexpr()"
 
---require 'plugins.setup.doom_one-module'
