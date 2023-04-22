@@ -1,7 +1,7 @@
 # Compiled Lua sources
 luac.out
 *.json
-plugin/
+/plugin
 
 # luarocks build files
 *.src.rock

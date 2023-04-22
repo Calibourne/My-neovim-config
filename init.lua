@@ -1,2 +1,5 @@
-require("base")
+require("plugins")
+require("remap")
+require("editor")
+require('plugins_setup')
 vim.cmd('colorscheme vscode')
