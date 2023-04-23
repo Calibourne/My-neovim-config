@@ -7,7 +7,13 @@ return {
 		dependencies = { {'nvim-lua/plenary.nvim'} }
 	},
 	'Mofiqul/vscode.nvim',
-    'shaunsingh/nord.nvim',
+    {'shaunsingh/nord.nvim', init=function ()
+        vim.g.nord_italic = false
+    end},
+    { "ellisonleao/gruvbox.nvim", priority = 1000 },
+    {'romgrk/doom-one.vim', init=function ()
+        vim.g.doom_one_terminal_colors = true
+    end},
 	{'nvim-treesitter/nvim-treesitter', init=function()
         pcall(vim.cmd,':TSUpdate')
     end},
@@ -70,4 +76,5 @@ return {
       })
     end,
     },
+    'lewis6991/gitsigns.nvim'
 }

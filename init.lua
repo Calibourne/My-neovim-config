@@ -2,7 +2,6 @@ require("plugins")
 require("remap")
 require("editor")
 vim.cmd('colorscheme nord')
-vim.g.nord_italic = false
 
 local function initColorscheme(theme)
 	theme = theme or "vscode"
@@ -14,4 +13,4 @@ local function initColorscheme(theme)
         -- ,{ bg = "none" }
 end
 
-initColorscheme("nord")
+initColorscheme("doom-one")
