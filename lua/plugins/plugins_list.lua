@@ -7,6 +7,7 @@ return {
 		dependencies = { {'nvim-lua/plenary.nvim'} }
 	},
 	'Mofiqul/vscode.nvim',
+    'shaunsingh/nord.nvim',
 	{'nvim-treesitter/nvim-treesitter', init=function()
         pcall(vim.cmd,':TSUpdate')
     end},
