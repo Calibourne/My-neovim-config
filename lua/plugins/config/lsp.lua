@@ -1,6 +1,6 @@
 local lsp = require('lsp-zero')
 local lspconfig = require('lspconfig')
-local servers = {'tsserver', 'eslint', 'lua_ls', 'pyright', 'clangd', 'html', 'rome', 'cssls'}
+local servers = {'tsserver', 'lua_ls', 'pyright', 'clangd', 'html', 'cssls'}
 
 lsp.preset('recommended')
 
