@@ -76,5 +76,39 @@ return {
       })
     end,
     },
-    'lewis6991/gitsigns.nvim'
+    'lewis6991/gitsigns.nvim',
+    {"ellisonleao/glow.nvim", config = true, cmd = "Glow"},
+    {
+    "iamcco/markdown-preview.nvim",
+    build = function() vim.fn["mkdp#util#install"]() end,
+    },
+    {
+        'barrett-ruth/live-server.nvim',
+        build = 'yarn global add live-server',
+        config = true
+    },{
+	    "windwp/nvim-autopairs",
+        config = function()
+            require("nvim-autopairs").setup {} 
+        end
+    },{
+        'windwp/nvim-ts-autotag',
+        config = function ()
+            require('nvim-ts-autotag').setup()
+        end
+    },
+    {
+
+        "ziontee113/color-picker.nvim",
+        config = function()
+            require("color-picker").setup()
+        end
+    },
+    {
+        'norcalli/nvim-colorizer.lua',
+        config = function ()
+            require('colorizer').setup()
+            vim.opt.termguicolors = true
+        end
+    }
 }

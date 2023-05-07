@@ -1,6 +1,6 @@
+require("editor")
 require("plugins")
 require("remap")
-require("editor")
 vim.cmd('colorscheme nord')
 
 local function initColorscheme(theme)
