@@ -89,7 +89,7 @@ return {
     },{
 	    "windwp/nvim-autopairs",
         config = function()
-            require("nvim-autopairs").setup {} 
+            require("nvim-autopairs").setup {}
         end
     },{
         'windwp/nvim-ts-autotag',
@@ -110,5 +110,14 @@ return {
             require('colorizer').setup()
             vim.opt.termguicolors = true
         end
-    }
+    },
+    {
+        "L3MON4D3/LuaSnip",
+        -- follow latest release.
+        version = "<CurrentMajor>.*", -- Replace <CurrentMajor> by the latest released major (first number of latest release)
+        -- install jsregexp (optional!).
+        build = "make install_jsregexp"
+    },
+    'saadparwaiz1/cmp_luasnip',
+    "rafamadriz/friendly-snippets",
 }
