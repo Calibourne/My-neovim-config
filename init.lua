@@ -1,16 +1,13 @@
-require("editor")
-require("plugins")
-require("remap")
-vim.cmd('colorscheme nord')
-
-local function initColorscheme(theme)
-	theme = theme or "vscode"
-	vim.cmd.colorscheme(theme)
-
-	-- vim.api.nvim_set_hl(0, "Normal", {})
-        -- ,{ bg = "none" }
-	-- vim.api.nvim_set_hl(0, "NormalFloat", {})
-        -- ,{ bg = "none" }
-end
-
-initColorscheme("doom-one")
+-- bootstrap lazy.nvim, LazyVim and your plugins
+require("config.lazy")
+local lspconfig = require("lspconfig")
+-- lspconfig.lua_ls.setup()
+lspconfig.lua_ls.setup({
+  settings = {
+    Lua = {
+      diagnostics = {
+        globals = { "vim" },
+      },
+    },
+  },
+})
